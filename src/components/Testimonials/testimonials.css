@@ -1,0 +1,23 @@
+.total-testimonial {
+  padding: 0 150px 150px;
+}
+@media only screen and (max-width: 1024px) {
+  .total-testimonial {
+    padding: 0 150px 90px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .total-testimonial {
+    padding: 0 80px 60px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .total-testimonial {
+    padding: 10px 25px 40px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .total-testimonial {
+    padding: 7px 25px 20px;
+  }
+}

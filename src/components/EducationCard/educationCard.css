@@ -1,0 +1,74 @@
+.education-card {
+  width: 800px;
+  background-color: #181715;
+  padding: 50px;
+  border-top-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  border-left: 3px solid #459a3c;
+  margin-bottom: 20px;
+}
+.education-card > h2 {
+  color: #b8b5b7;
+  font-size: 20px;
+  background-color: #181715;
+}
+.education-card > h2 > span {
+  color: #6a6969;
+  font-size: 17px;
+  margin-left: 20px;
+  background-color: #181715;
+}
+.education-card > h1 {
+  color: #459a3c;
+  margin: 35px 0;
+  background-color: #181715;
+}
+.education-card > h3 {
+  line-height: 1.7;
+  font-size: 17px;
+  background-color: #181715;
+}
+@media only screen and (max-width: 1024px) {
+  .education-card {
+    width: 650px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .education-card {
+    width: 550px;
+    padding: 35px;
+  }
+  .education-card > h1 {
+    margin: 30px 0;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .education-card {
+    width: 100%;
+    padding: 25px;
+  }
+  .education-card > h1 {
+    margin: 22px 0;
+    font-size: 25px;
+  }
+  .education-card > h3 {
+    line-height: 1.6;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .education-card {
+    padding: 20px;
+  }
+  .education-card > h2 > span {
+    font-size: 13px;
+    margin-left: 8px;
+    background-color: #181715;
+  }
+  .education-card > h1 {
+    margin: 18px 0;
+    font-size: 22px;
+  }
+  .education-card > h3 {
+    line-height: 1.5;
+  }
+}

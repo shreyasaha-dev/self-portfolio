@@ -1,0 +1,24 @@
+.subHeading > h2 {
+  font-size: 30px;
+  color: rgb(173, 170, 170);
+  margin-bottom: 70px;
+  line-height: 1.5;
+}
+@media only screen and (max-width: 768px) {
+  .subHeading > h2 {
+    font-size: 25px;
+    margin-bottom: 60px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .subHeading > h2 {
+    font-size: 20px;
+    margin-bottom: 40px;
+    line-height: 1.5;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .subHeading > h2 {
+    margin-bottom: 25px;
+  }
+}

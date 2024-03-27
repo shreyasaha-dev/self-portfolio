@@ -1,0 +1,106 @@
+.service-card {
+  width: 900px;
+  background-color: #181715;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  border-left: 3px solid #459a3c;
+  padding: 50px;
+  margin-bottom: 20px;
+}
+.service-left-section {
+  width: 70%;
+  background-color: #181715;
+  border-right: 1px solid rgb(68, 66, 66);
+  padding-right: 50px;
+}
+.service-left-section > h1 {
+  margin-bottom: 35px;
+  background-color: #181715;
+  color: white;
+}
+.service-left-section > h3 {
+  line-height: 1.7;
+  font-size: 17px;
+  background-color: #181715;
+}
+.service-right-section {
+  width: 30%;
+  background-color: #181715;
+  text-align: center;
+}
+.service-right-section > h4 {
+  color: #6a6969;
+  background-color: #181715;
+  margin-bottom: 15px;
+}
+.service-right-section > h2 {
+  color: #459a3c;
+  background-color: #181715;
+  font-size: 30px;
+}
+@media only screen and (max-width: 1024px) {
+  .service-card {
+    width: 670px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .service-card {
+    width: 570px;
+    padding: 40px;
+  }
+  .service-left-section > h1 {
+    margin-bottom: 25px;
+    font-size: 27px;
+    background-color: #181715;
+    color: white;
+  }
+  .service-left-section > h3 {
+    line-height: 1.5;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .service-card {
+    width: 100%;
+    padding: 25px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .service-left-section > h1 {
+    margin-bottom: 20px;
+    font-size: 25px;
+  }
+  .service-left-section > h3 {
+    line-height: 1.4;
+  }
+  .service-left-section {
+    width: 100%;
+    border-right: none;
+    padding-right: 0;
+  }
+  .service-right-section {
+    width: 100%;
+    text-align: left;
+    margin-top: 18px;
+  }
+  .service-right-section > h4 {
+    color: rgb(173, 170, 170);
+    margin-bottom: 10px;
+  }
+  .service-right-section > h2 {
+    font-size: 26px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .service-card {
+    padding: 20px;
+  }
+  .service-left-section > h1 {
+    font-size: 23px;
+  }
+  .service-right-section > h2 {
+    font-size: 23px;
+  }
+}

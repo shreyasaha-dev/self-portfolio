@@ -1,0 +1,141 @@
+.contact-card {
+  width: 800px;
+}
+.contact-details {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 222px;
+  width: 100%;
+  margin-bottom: 30px;
+}
+.contact-left-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+.input {
+  width: 100%;
+  padding: 20px;
+  font-size: 18px;
+  margin-bottom: 15px;
+  border: none;
+  outline: none;
+  border: 1px solid rgb(71, 69, 69);
+  color: white;
+}
+.textarea {
+  padding: 20px;
+  width: 50%;
+  resize: none;
+  height: 100%;
+  outline: none;
+  font-size: 19px;
+  color: white;
+  margin-left: 15px;
+  border: 1px solid rgb(71, 69, 69);
+}
+.error {
+  border: 2px solid rgb(136, 59, 59);
+}
+.contact-card > form > button {
+  padding: 15px 50px;
+  color: #459a3c;
+  border: 2px solid #459a3c;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 18px;
+  box-shadow: 0 0 5px #459a3c;
+  transition: 0.5s;
+  margin-bottom: 80px;
+}
+.contact-card > form > button:hover {
+  color: white;
+  background-image: linear-gradient(to left, #459a3c, #1d1b19);
+}
+.alertMessage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  padding: 10px;
+}
+.alertMessage > h1 {
+  background-color: white;
+  color: #1d1b19;
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+.alertMessage > button {
+  background-color: #459a3c;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 13px 30px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  color: white;
+}
+.customModal {
+  background: white;
+  border-radius: 10px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .contact-card {
+    width: 720px;
+  }
+  .contact-card > form > button {
+    margin-bottom: 50px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .contact-card {
+    width: 500px;
+  }
+  .contact-details {
+    flex-direction: column;
+    height: auto;
+  }
+  .textarea {
+    margin-left: 0;
+    width: 100%;
+    height: 150px;
+  }
+  .contact-left-section {
+    width: 100%;
+  }
+  .contact-card > form > button {
+    margin-bottom: 30px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .contact-card {
+    width: 100%;
+  }
+  .contact-card > form > button {
+    margin-bottom: 15px;
+  }
+  .alertMessage {
+    width: 250px;
+  }
+  .alertMessage > h1 {
+    font-size: 20px;
+  }
+  .alertMessage > button {
+    font-size: 16px;
+    padding: 10px 25px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .alertMessage {
+    width: 250px;
+    padding: 0;
+  }
+  .alertMessage > h1 {
+    font-size: 18px;
+  }
+}

@@ -1,0 +1,38 @@
+.total-intro > span {
+  font-family: "Gwendolyn", cursive;
+  font-size: 50px;
+  font-weight: bold;
+  color: #b9b6ab;
+  padding-bottom: 25px;
+  border-bottom: 2px gray solid;
+}
+.total-intro {
+  padding: 150px 150px 100px;
+}
+@media only screen and (max-width: 1024px) {
+  .total-intro {
+    padding: 130px 150px 100px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .total-intro {
+    padding: 110px 80px 90px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .total-intro {
+    padding: 40px 25px 50px;
+  }
+  .total-intro > span {
+    font-size: 40px;
+    padding-bottom: 18px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .total-intro {
+    padding: 30px 25px 40px;
+  }
+  .total-intro > span {
+    padding-bottom: 15px;
+  }
+}

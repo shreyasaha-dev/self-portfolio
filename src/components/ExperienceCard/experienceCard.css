@@ -1,0 +1,77 @@
+.total-experienceCard {
+  width: 900px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 40px;
+}
+.experience-left-section > h3 {
+  font-size: 18px;
+  color: white;
+  margin-bottom: 10px;
+}
+.experience-left-section > p {
+  color: #6a6969;
+  font-weight: bold;
+  font-size: 18px;
+}
+.experience-right-section {
+  width: 65%;
+}
+.experience-right-section > h3 {
+  font-size: 25px;
+  color: white;
+  margin-bottom: 6px;
+}
+.experience-right-section > p {
+  color: rgb(173, 170, 170);
+  line-height: 1.5;
+  font-size: 20px;
+}
+.total-experienceCard > span {
+  color: #459a3c;
+  font-size: 50px;
+  margin: 0 10px;
+  margin-top: -12px;
+}
+@media only screen and (max-width: 1024px) {
+  .total-experienceCard {
+    width: 800px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .total-experienceCard > span {
+    display: none;
+  }
+  .experience-right-section {
+    width: 100%;
+  }
+  .experience-left-section {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .total-experienceCard {
+    width: 600px;
+    flex-direction: column;
+  }
+  .experience-right-section > h3 {
+    color: #459a3c;
+    font-size: 28px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .total-experienceCard {
+    width: 100%;
+  }
+  .experience-right-section > h3 {
+    font-size: 26px;
+  }
+  .experience-right-section > p {
+    font-size: 19px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .experience-right-section > p {
+    font-size: 17px;
+  }
+}

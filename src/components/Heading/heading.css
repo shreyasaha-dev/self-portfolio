@@ -1,0 +1,39 @@
+.heading > h1 {
+  font-size: 70px;
+  margin: 50px 0 15px;
+  color: #459a3c;
+}
+.heading > div {
+  width: 250px;
+  height: 2px;
+  background-color: gray;
+  margin-bottom: 60px;
+}
+@media only screen and (max-width: 768px) {
+  .heading > h1 {
+    font-size: 50px;
+    margin: 40px 0 15px;
+  }
+  .heading > div {
+    margin-bottom: 50px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .heading > h1 {
+    font-size: 35px;
+    margin: 30px 0 15px;
+  }
+  .heading > div {
+    margin-bottom: 40px;
+    width: 180px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .heading > h1 {
+    font-size: 30px;
+    margin: 22px 0 15px;
+  }
+  .heading > div {
+    margin-bottom: 30px;
+  }
+}

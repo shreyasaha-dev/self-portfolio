@@ -1,0 +1,72 @@
+.resume-section {
+  padding: 30px 150px;
+}
+.all-buttons {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 100px;
+  /* width: 800px; */
+}
+.inactive {
+  color: #459a3c;
+  border: 2px solid #459a3c;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 20px;
+  width: 28%;
+  padding: 20px;
+  box-shadow: 0 0 5px #459a3c;
+  transition: 0.5s;
+}
+.active {
+  color: white;
+  border: 2px solid #459a3c;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 20px;
+  width: 28%;
+  padding: 20px;
+  transition: 0.5s;
+  background-image: linear-gradient(to left, #459a3c, #1d1b19);
+}
+@media only screen and (max-width: 1024px) {
+  .all-buttons {
+    margin-bottom: 90px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .resume-section {
+    padding: 30px 80px;
+  }
+  .all-buttons {
+    margin-bottom: 80px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .resume-section {
+    padding: 10px 25px;
+  }
+  .all-buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  .inactive {
+    font-size: 20px;
+    width: 80%;
+    margin-bottom: 15px;
+  }
+  .active {
+    font-size: 20px;
+    width: 80%;
+    margin-bottom: 15px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .resume-section {
+    padding: 10px 25px;
+  }
+}

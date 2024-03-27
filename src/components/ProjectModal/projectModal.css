@@ -1,0 +1,84 @@
+.project-modal > h1 {
+  color: #459a3c;
+  background-color: white;
+}
+.project-modal {
+  background-color: white;
+  padding: 20px;
+  width: 600px;
+}
+.project-modal > img {
+  width: 400px;
+  height: 200px;
+  margin: 15px 0;
+  background-color: white;
+}
+.project-modal > h4 {
+  color: #969292;
+  background-color: white;
+  width: 90%;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+.project-modal > ul {
+  background-color: white;
+}
+.project-modal > ul > li {
+  background-color: white;
+  font-weight: bold;
+  margin-left: 15px;
+}
+.url-section {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: white;
+}
+.url-section > a {
+  background-color: white;
+  margin: 0 20px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #6a6969;
+}
+.url-section > a:hover {
+  color: #459a3c;
+}
+@media only screen and (max-width: 768px) {
+  .project-modal {
+    background-color: white;
+    padding: 20px;
+    width: 500px;
+  }
+  .project-modal > img {
+    width: 300px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .project-modal {
+    padding: 5px;
+    max-width: 250px;
+  }
+  .project-modal > h1 {
+    font-size: 26px;
+  }
+  .project-modal > img {
+    width: 100%;
+  }
+  .project-modal > h4 {
+    width: 100%;
+    font-size: 17px;
+  }
+  .url-section > a {
+    margin: 0 13px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .project-modal {
+    padding: 0;
+    width: 230px;
+  }
+  .url-section {
+    margin-top: 5px;
+  }
+}

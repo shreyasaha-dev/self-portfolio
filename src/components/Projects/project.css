@@ -1,0 +1,32 @@
+.total-projects {
+  padding: 150px;
+}
+.all-projects {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.color {
+  border-radius: 10px;
+}
+@media only screen and (max-width: 1024px) {
+  .total-projects {
+    padding: 100px 150px 80px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .total-projects {
+    padding: 50px 80px 50px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .total-projects {
+    padding: 50px 25px 30px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .total-projects {
+    padding: 40px 25px 30px;
+  }
+}
