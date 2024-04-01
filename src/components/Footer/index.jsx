@@ -1,13 +1,12 @@
 import moment from "moment";
 import "./footer.css";
-import { useSelector } from "react-redux";
+import data from "../../constant";
 const Footer = () => {
-  const userData = useSelector((state) => state.userData);
   return (
     <div className="footer-section">
       <h3>Copyright © {moment().format("YYYY")}. All rights reserved.</h3>
       <h3>
-        Developed by <span> {userData?.about?.name}</span>
+        Developed by <span> {data?.landing?.fullName}</span>
       </h3>
     </div>
   );

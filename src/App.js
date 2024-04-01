@@ -53,8 +53,8 @@ const App = () => {
       <About />
       <Resume />
       <Projects />
-      <Testimonials />
-      <Services />
+      {/* <Testimonials /> */}
+      {/* <Services /> */}
       <Contact />
       <Footer />
     </div>

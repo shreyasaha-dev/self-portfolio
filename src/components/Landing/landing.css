@@ -16,7 +16,7 @@
   color: #6a6969;
 }
 .landing-left-section > h1 {
-  font-size: 130px;
+  font-size: 110px;
   color: #1d1b19;
   margin: 50px 0;
   -webkit-text-stroke: 3px #459a3c;
@@ -28,15 +28,18 @@
   align-items: center;
 }
 .icons {
-  width: 37px;
-  height: 37px;
-  background-size: contain;
-  margin-right: 12px;
+  font-size: 35px;
+  margin-right: 20px;
   cursor: pointer;
+  color: gray;
 }
-
+.icons:hover {
+  color: #459a3c;
+  transition: 0.5s;
+}
 .landing-right-section > img {
   width: 300px;
+  /* height: 400px; */
   background-size: cover;
   margin: 10px;
   margin-bottom: 6px;
@@ -54,7 +57,7 @@
     margin: 40px 0;
   }
   .landing-right-section > img {
-    width: 250px;
+    width: 270px;
   }
 }
 @media only screen and (max-width: 768px) {
@@ -62,7 +65,7 @@
     padding: 40px 80px;
   }
   .landing-right-section > img {
-    width: 210px;
+    width: 240px;
   }
   .landing-left-section > h1 {
     font-size: 75px;

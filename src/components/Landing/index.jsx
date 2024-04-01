@@ -1,36 +1,34 @@
-import { FaFacebook } from "react-icons/fa6";
-import { AiFillTwitterCircle } from "react-icons/ai";
 import { FaGithub } from "react-icons/fa6";
+import { FaLinkedin } from "react-icons/fa";
 import "./landing.css";
-import { useSelector } from "react-redux";
+import data from "../../constant";
 const Landing = () => {
-  const userData = useSelector((state) => state.userData);
   return (
     <div className="total-landing">
       <div className="landing-left-section">
         <h2>HI THERE ! I AM</h2>
-        <h1>{userData?.about?.name}</h1>
+        <h1>{data?.landing?.fullName}</h1>
         <div className="all-icons">
-          {userData?.social_handles
-            ?.filter((element) => {
-              if (element.enabled) {
-                return element;
-              }
-            })
-            ?.map((item) => {
-              return (
-                <img
-                  src={item?.image?.url}
-                  alt="social_media"
-                  key={item?._id}
-                  className="icons"
-                />
-              );
-            })}
+          <a
+            href={data?.landing?.gitHub}
+            className="icons"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaGithub />
+          </a>
+          <a
+            href={data?.landing?.linkedIn}
+            className="icons"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaLinkedin />
+          </a>
         </div>
       </div>
       <div className="landing-right-section">
-        <img src={userData?.about?.avatar?.url} alt="profile_picture" />
+        <img src={data?.landing?.avatar} alt="profile_picture" />
       </div>
     </div>
   );

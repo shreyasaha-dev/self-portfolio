@@ -5,7 +5,7 @@ const SkillCard = ({ icon, name, percentage }) => {
       <img src={icon} alt="icons" />
       <div className="skill-details">
         <p>{name}</p>
-        <h3>{percentage}%</h3>
+        <h3>{percentage}</h3>
       </div>
     </div>
   );

@@ -6,9 +6,8 @@ import "./project.css";
 import { Modal } from "react-responsive-modal";
 import "react-responsive-modal/styles.css";
 import ProjectModal from "../ProjectModal";
-import { useSelector } from "react-redux";
+import data from "../../constant";
 const Projects = () => {
-  const userData = useSelector((state) => state.userData);
   const [projectData, setProjectData] = useState({});
   const [open, setOpen] = useState(false);
   const onOpenModal = (element) => {
@@ -21,26 +20,19 @@ const Projects = () => {
       <Title title="PORTFOLIO" />
       <Heading heading="Featured Projects" />
       <div className="all-projects">
-        {userData?.projects
-          ?.filter((item) => {
-            if (item?.enabled) {
-              return item;
-            }
-          })
-          ?.map((element) => {
-            return (
-              <ProjectCard
-                key={element?._id}
-                onOpenModal={() => {
-                  onOpenModal(element);
-                }}
-                image={element?.image?.url}
-                projectNumber={element?.title}
-                feature={element?.techStack.join(",")}
-              />
-            );
-          })
-          ?.reverse()}
+        {data?.project?.map((element, i) => {
+          return (
+            <ProjectCard
+              key={i}
+              onOpenModal={() => {
+                onOpenModal(element);
+              }}
+              image={element?.image}
+              projectNumber={element?.projectName}
+              feature={element?.techStack.join(",")}
+            />
+          );
+        })}
       </div>
       <Modal
         open={open}
@@ -52,11 +44,11 @@ const Projects = () => {
         }}
       >
         <ProjectModal
-          projectName={projectData?.title}
+          projectName={projectData?.projectName}
           description={projectData?.description}
-          website={projectData?.liveurl}
-          github={projectData?.githuburl}
-          image={projectData?.image?.url}
+          website={projectData?.website}
+          github={projectData?.gitHub}
+          image={projectData?.image}
           techStack={projectData?.techStack}
         />
       </Modal>
