@@ -21,12 +21,27 @@ const data = {
     { name: "HTML", percent: "90%", image: require("./Images/html.png") },
     { name: "CSS", percent: "85%", image: require("./Images/css.png") },
     {
+      name: "Tailwind",
+      percent: "80%",
+      image: require("./Images/tailwind.webp"),
+    },
+    {
       name: "Javascript",
       percent: "75%",
       image: require("./Images/javascript.webp"),
     },
+    {
+      name: "TypeScript",
+      percent: "70%",
+      image: require("./Images/typescript.png"),
+    },
     { name: "React", percent: "70%", image: require("./Images/react.webp") },
     { name: "Redux", percent: "85%", image: require("./Images/redux.png") },
+    {
+      name: "Firebase",
+      percent: "70%",
+      image: require("./Images/firebase.png"),
+    },
     { name: "Git", percent: "70%", image: require("./Images/git.png") },
     { name: "GitHub", percent: "70%", image: require("./Images/github.png") },
   ],
@@ -70,7 +85,7 @@ const data = {
       projectName: "Quiz App",
       image: require("./Images/quiz-app.png"),
       description:
-        "It has limited of questions and for each correct answer user will get a score.",
+        "I had to select an answer for each question to progress to the next, with the flexibility to revise my choices at any time. After completing all 10 questions, my score was presented out of 10, with correct answers marked in green and  incorrect ones in red. Post-quiz, I could initiate a new game by clicking the ”Play Another Game” button, facilitating continuous engagement.",
       techStack: ["HTML", "CSS", "Reactjs"],
       website: "https://quizappbyshreya.netlify.app/",
       gitHub: "https://github.com/shreyasaha-dev/quiz-app",
@@ -79,7 +94,7 @@ const data = {
       projectName: "Weather App",
       image: require("./Images/weather-app.png"),
       description:
-        "A live weather website for finding real time weather information. I have implemented this feature by using open weather API.",
+        " I experienced using the app’s search feature, where I could enter the name of a city or country and initiate the search by clicking the ”Search” button. The app promptly displayed the current weather of the requested location, leveraging data retrieved via Axios from   the OpenWeatherMap API. This project was instrumental in teaching me how to make API calls using Axios, enhancing my technical skills in handling real data integration.",
       techStack: ["HTML", "CSS", "Reactjs"],
       website: "https://weatherappbyshreya.netlify.app/",
       gitHub: "https://github.com/shreyasaha-dev/weather-app",
@@ -88,10 +103,19 @@ const data = {
       projectName: "Shopping App",
       image: require("./Images/shopping-app.png"),
       description:
-        "It is an online store where an user can browse winter clothes, add items to the cart and wishlist any specific items. The whole app state is managed by usecontext .",
+        "Through the project, I gained hands-on experience with the Context API, which was used for managing state throughout the application. This allowed me to efficiently handle state across various components without prop drilling. I learned to implement functionality that lets users view products, search for specific items, and interact with these products by adding them to a wishlist or directly to their shopping cart from the product details page. I developed the cart feature where users can adjust the quantity of the items, with the total price updating dynamically. If the total price exceeded 50 rupees, delivery charges were automatically waived, introducing me to more complex state logic. The incorporation of a contact form taught me to use Formik alongside Yup for robust form management and validation, enhancing my skills in building reliable and user-friendly forms.",
       techStack: ["HTML", "CSS", "Reactjs", "Context API"],
       website: "https://shoppingappbyshreya.netlify.app/",
       gitHub: "https://github.com/shreyasaha-dev/shopping-app",
+    },
+    {
+      projectName: "Admin Panel",
+      image: require("./Images/table-app.png"),
+      description:
+        "Developed a data table feature allowing users to add patient names, doctor names, visit dates, and issues, with entries displayed in a table format. Implemented Redux and Redux Persist for efficient state management and data persistence. Enabled users to edit and delete specific data entries directly from the table interface. Integrated a search bar functionality allowing users to search for patient names, enhancing usability and efficiency. Implemented pagination for better organization and navigation of large datasets, ensuring smooth user experience.",
+      techStack: ["HTML", "CSS", "Reactjs", "Redux"],
+      website: "https://tablebyshreyasaha.netlify.app/",
+      gitHub: "https://github.com/shreyasaha-dev/table-list",
     },
   ],
 };
